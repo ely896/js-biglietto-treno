@@ -1,0 +1,10 @@
+.pass {
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    background-color: lightslategray;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+}
+
