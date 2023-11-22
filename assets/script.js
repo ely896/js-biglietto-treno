@@ -22,6 +22,7 @@ const discountunderAge = 0.2;
 let priceTicketUnderage = 0.21 * userAge * discountunderAge;
 
 
+
 //Dichiarazione variabile sconto per persone di età superiore ai 65 anni
 
 const discountSenior = 0.4;
@@ -39,18 +40,18 @@ let priceTicket = 0.21 * userAge;
 if (userAge >= 18 && userAge<=65) {
 
     console.log(priceTicket);
-    document.getElementById("expense").innerHTML = priceTicket;
+    document.getElementById("expense").innerHTML = priceTicket.toFixed(2);
 
 } else if (userAge <18) {
 
     console.log(priceTicketUnderage);
-    document.getElementById("expense").innerHTML = priceTicketUnderage;
+    document.getElementById("expense").innerHTML = priceTicketUnderage.toFixed(2);
 
 
 }  else if (userAge >65) {
 
     console.log(priceTicketSenior);
-    document.getElementById("expense").innerHTML = priceTicketSenior;
+    document.getElementById("expense").innerHTML = priceTicketSenior.toFixed(2);
 
 }
 
