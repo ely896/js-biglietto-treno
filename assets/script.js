@@ -39,18 +39,18 @@ let priceTicket = 0.21 * userAge;
 
 if (userAge >= 18 && userAge<=65) {
 
-    console.log(priceTicket);
+    console.log(priceTicket.toFixed(2));
     document.getElementById("expense").innerHTML = priceTicket.toFixed(2);
 
 } else if (userAge <18) {
 
-    console.log(priceTicketUnderage);
+    console.log(priceTicketUnderage.toFixed(2));
     document.getElementById("expense").innerHTML = priceTicketUnderage.toFixed(2);
 
 
 }  else if (userAge >65) {
 
-    console.log(priceTicketSenior);
+    console.log(priceTicketSenior.toFixed(2));
     document.getElementById("expense").innerHTML = priceTicketSenior.toFixed(2);
 
 }
